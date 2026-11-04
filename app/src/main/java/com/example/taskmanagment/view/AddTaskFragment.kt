@@ -12,12 +12,9 @@ class AddTaskFragment : Fragment() {
 
     lateinit var binding: FragmentAddTaskBinding
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-
-        binding = FragmentAddTaskBinding.inflate(inflater,container,false)
-
+        binding = FragmentAddTaskBinding.inflate(inflater, container, false)
         return binding.root
     }
 

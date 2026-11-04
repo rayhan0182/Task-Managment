@@ -10,17 +10,12 @@ import com.example.taskmanagment.databinding.FragmentTaskListBinding
 
 class TaskListFragment : Fragment() {
 
-
     lateinit var binding: FragmentTaskListBinding
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-
-        binding = FragmentTaskListBinding.inflate(inflater,container,false)
-
+        binding = FragmentTaskListBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
 

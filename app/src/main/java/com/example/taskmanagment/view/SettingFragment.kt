@@ -1,23 +1,23 @@
 package com.example.taskmanagment.view
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.taskmanagment.R
-import com.example.taskmanagment.databinding.FragmentWelcomeBinding
+import com.example.taskmanagment.databinding.FragmentSettingBinding
 
-class WelcomeFragment : Fragment() {
+class SettingFragment : Fragment() {
 
-    private lateinit var binding: FragmentWelcomeBinding
-
+    lateinit var binding: FragmentSettingBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentWelcomeBinding.inflate(inflater,container,false)
+    ): View? {
+        binding = FragmentSettingBinding.inflate(inflater, container, false)
         return binding.root
     }
+
+
 }
