@@ -1,5 +1,7 @@
 [versions]
-agp = "9.4.1"
+agp = "9.4.0"
+ksp = "2.3.10"
+room = "2.8.4"
 coreKtx = "1.19.1"
 coreSplashscreen = "1.2.0"
 junit = "4.13.2"
@@ -13,6 +15,8 @@ lottie = "6.7.1"
 navigationFragmentKtx = "2.10.2"
 navigationUiKtx = "2.10.2"
 fragment = "1.9.1"
+viewpager2 = "1.1.0"
+roomGuava = "2.8.5"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -28,7 +32,14 @@ lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 androidx-fragment = { group = "androidx.fragment", name = "fragment", version.ref = "fragment" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager2" }
+androidx-room-guava = { group = "androidx.room", name = "room-guava", version.ref = "roomGuava" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+room = { id = "androidx.room", version.ref = "room" }
 
